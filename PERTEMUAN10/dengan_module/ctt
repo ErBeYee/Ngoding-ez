@@ -1,0 +1,42 @@
+=-=-=-=-=-=-=-=-=-=-=-=
+=-= CATATAN  MODULE =-=
+=-=-=-=-=-=-=-=-=-=-=-=
+
+    <script type="module" src="namafilr.js"></script>
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+jika 1 file isi nya 1 logika gunakan lah export default dan gada {}
+jika lebih dari 1 maka export {}
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+kalau pakai import module harus pakai ./ ketika difrom nya
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+variabel atau fungsi yang udah di export itu bisa di aliaskan dengan kunci "as"
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+cara importnya 
+    <script type="module" src="namafilr.js"></script>
+tambah lagi jika ada lebih 1 file js
+    <script type="module" src="namafilr.js"></script>
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+klau export lbih dari 1 maka pakai kata kunci ini di akhir baris
+export {nama variable,nama variabel}
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+common js itu gak bisa langsung jalan di browser
+common js pakai require()
+sblum pakai require() buat variable untuk menampung data/variable/fungsi dari sebuah module
+cara exporrtnya menggunakan kata kunci module.export = {}
+cara pakai nya dengan require()
+
+esModule (import,export) tidak bisa digabung dengan require()/ module.export jadi harus ditentukan trlebih dahulu antara :
+- commonJS - module.exports = {} dan require()
+- ESModule - export{nama_var,nama_fungsi} dan import{nama_var,nama_fungsi} from './nama_file.js'
+

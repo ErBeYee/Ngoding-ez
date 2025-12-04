@@ -1,0 +1,9 @@
+{
+    "status" : "sukses",
+    "message" : "Data berhasil ditampilkan ",
+    "data" : {
+        "id" : 1,
+        "nama" : "Rebby",
+        "email" : "rebby@gamil.com"
+    }
+}

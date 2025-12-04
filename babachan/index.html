@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div style="display: flex; align-items: center; gap: 15px">
+      <div class="m-4" style="width: 100px">
+        <img src="jpg/chef-icon-8.png" alt="" style="width: 130px; height:
+        150px;"">
+      </div>
+      <div class="bg-danger w-100 p-2 h-auto">
+        <span class="badge text-bg-warning">Buka 24 jam</span>
+        <h2 class="fw-bold text-white">Resto Babachan</h2>
+        <p class="fw-bold text-white">
+          Menyediakan berbagai makanan khas Nusantara, Terima pesanan (0857 8991
+          7092)
+        </p>
+        <small class="text-white fst-italic"
+          >Jl.Mandor Basar no.54 RT001/001 Rangkapanjaya Pancoran Mas Depok -
+          16435</small
+        >
+      </div>
+    </div>
+    <hr />
+    <!-- marque -->
+    <hr />
+    <div>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active fw-bold" id="menu-tab" data-bs-toggle="tab" href="#daftarmenu" role="tab">
+      Daftar Menu
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link fw-bold" id="pesanan-tab" data-bs-toggle="tab" href="#pesanan" role="tab">
+      <i class="fas fa-cube"></i> Pemesanan
+    </a>
+  </li>
+</ul>
+
+<div class="tab-content mt-3">
+  <div class="tab-pane fade show active" id="daftarmenu" role="tabpanel">
+      <div class="row ms-2">
+        <div class="col-md-6">
+          <p class="fw-bold text-white bg-danger p-2">Makanan</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="col-md-1">No</th>
+                <th scope="col" class="col-md-1">Kode</th>
+                <th scope="col" class="col-md-6">Menu</th>
+                <th scope="col" class="col-md-1">Harga</th>
+                <th scope="col" class="col-md-1"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>BCAG</td>
+                <td>Ayam Goreng Mentega</td>
+                <td>Rp 25,000</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>BCAB</td>
+                <td>Ayam Bakar Taliwang</td>
+                <td>Rp 23,000</td>
+                <td><span class="badge text-bg-success">terlaris</span></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>BCNU</td>
+                <td>Nasi Uduk</td>
+                <td>Rp 5,000</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>BCGP</td>
+                <td>Ayam Geperek Sambal Matah</td>
+                <td>Rp 19,000</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>BCSA</td>
+                <td>Sate Ayam</td>
+                <td>Rp 15,000</td>
+                <td><span class="badge text-bg-success">terlaris</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <p class="fw-bold text-white bg-danger p-2">Minuman</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="col-md-1">No</th>
+                <th scope="col" class="col-md-1">Kode</th>
+                <th scope="col" class="col-md-6">Menu</th>
+                <th scope="col" class="col-md-1">Harga</th>
+                <th scope="col" class="col-md-1"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>BCEJ</td>
+                <td>Es Jeruk Panas</td>
+                <td>Rp 8,000</td>
+                <td><span class="badge text-bg-success">terlaris</span></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>BCET</td>
+                <td>Es Teh Manis</td>
+                <td>Rp 8,000</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>BCAM</td>
+                <td>Air Mineral</td>
+                <td>Rp 5,000</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <div class="tab-pane fade" id="pesanan" role="tabpanel">
+    <div class="row ms-2">
+        <p>Silahkan lakukan pemesanan dibawah ini...</p>
+        <div class="col-md-6">
+            <div class="bg-dark">
+                <p class="text-white fw-bold p-2">Pemesanan</p>
+        </div>
+        <div class="row">
+          <div class="col-md-11">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Makanan</label
+            >
+            <select class="form-select" aria-label="Default select example">
+                <option selected hidden>-=Pilih Makanan=-</option>
+              <option value="1">Ayam Goreng Mentega</option>
+              <option value="2">Ayam Bakar Taliwang</option>
+              <option value="3">Nasi Uduk</option>
+              <option value="3">Ayam Geperek Sambal Matah</option>
+              <option value="3">Sate Ayam</option>
+            </select>
+        </div>
+        <div class="col-md-1">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Jumlah</label
+              >
+              <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              />
+            </div>
+        </div>
+        <div class="col-md-11">
+            <label for="exampleFormControlInput1" class="form-label"
+            >Minuman</label
+            >
+            <select class="form-select" aria-label="Default select example">
+              <option selected hidden>-=Pilih Minuman=-</option>
+              <option value="1">Es Jeruk Panas</option>
+              <option value="2">Es Teh Manis</option>
+              <option value="3">Air Mineral</option>
+            </select>
+        </div>
+        <div class="col-md-1">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                >Jumlah</label
+              >
+              <input
+              type="text"
+              class="form-control"
+                id="exampleFormControlInput1"
+              />
+            </div>
+        </div>
+        <div class="">
+            <button class="w-100 bg-dark text text-white fw-bold rounded">
+                Pesan Sekarang <i class="fas fa-arrow-circle-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="col-md-6">
+    <table class="table table-warning">
+        <thead>
+            <tr>
+                <th scope="col" class="col-md-2">No</th>
+                <th scope="col" class="col-md-4">Nama Menu</th>
+                <th scope="col" class="col-md-4">Jumlah</th>
+                <th scope="col" class="col-md-2">Total Harga</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row">
+            <p class="col-md-10 text-end">Total Bayar</p>
+            <p class="col-md-2"></p>
+            
+        </div>
+    </div>
+</div>
+</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

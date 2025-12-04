@@ -1,0 +1,11 @@
+buat aray mahasiswa
+buat array jurusna
+buat tabel di html
+tamabahin id di <tbody> nya sebagai identitas
+tangkap id dari <tbody> di js nya
+siap itu loopong data mahasiswa jo jurusan abru tampilkan didalam tabel ee
+JAN LUPO DI PISAHAN JO FUNCTION
+
+
+rta" nilai jurusan per jurusan
+bikin  1 tabel  rank

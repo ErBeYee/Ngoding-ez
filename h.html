@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nama" placeholder="">
+    <div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+    <button onclick="sapa()">sapa</button>
+    <button onclick="hapus()">hapus</button>
+    <p id="output"></p>
+
+    <script>
+        function sapa() {
+            const nama = document.getElementById("nama").value;
+            document.getElementById("output").innerText = "hallo " + nama;
+            alert("hallo " + nama);
+        }
+
+        function hapus() {
+            document.getElementById("output").innerText = "";
+            document.getElementById("nama").value = "";
+        }
+    </script>
+</body>
+</html>

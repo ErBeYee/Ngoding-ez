@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      async function belajarAPI() {
+        // valid URL
+        // seoalh" ini sedang akses url 
+        //http://127.0.0.1:5500/PERTEMUAN7/index.html
+        const ambilData = await fetch("data.json");
+        // ini adalah hasil dari response dari server
+        // masih data mentah
+        console.log(ambilData);
+        // lalukan parcing data agar response JSON bisa di pakai lewat java script
+        const dataAPI = await ambilData.json();
+        console.log(dataAPI);
+        console.log(dataAPI.status);
+        console.log(dataAPI.data.nama);
+
+      }
+      belajarAPI();
+    </script>
+  </body>
+</html>
