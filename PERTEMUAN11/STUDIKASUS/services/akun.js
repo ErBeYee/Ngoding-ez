@@ -13,13 +13,44 @@ const dataBaru = (nama, saldo = 0) => {
   return akunBaru;
 };
 const getAkun = (id) => {
-  const cariAkun = nasabah.data.find((nsb) => {
-    nsb.id === id;
-  });
+  const cariAkun = nasabah.data.find((nsb) => nsb.id === id);
   if (!cariAkun) {
     throw new Error("Maaf, Akun tidak ditemukan");
   }
   return cariAkun;
 };
+const depo = (id, jumlah) => {
+  const acc = getAkun(id);
+  if (jumlah <= 0) throw new Error("invalid");
+  const saldoawal = acc.saldo;
+  acc.saldo += jumlah;
+  const saldoakhr = acc.saldo;
 
-module.exports = { dataBaru ,getAkun};
+  acc.transaksi.push({
+    transaksi: "Deposit",
+    jumlah,
+    saldoawal,
+    saldoakhr,
+  });
+  return acc;
+};
+
+const ambilduit = (id, jumlah) => {
+  const acc = getAkun(id);
+  if (acc.saldo < jumlah) throw new Error("Piti ndk cukuik do");
+  if (jumlah <= 0) throw new Error("invalid");
+
+  const saldoawal = acc.saldo;
+  acc.saldo -= jumlah;
+  const saldoakhr = acc.saldo;
+
+  acc.transaksi.push({
+    transaksi: "Tarik Tunai",
+    jumlah,
+    saldoawal,
+    saldoakhr,
+  });
+  return acc;
+};
+
+module.exports = { dataBaru, getAkun, ambilduit, depo };
