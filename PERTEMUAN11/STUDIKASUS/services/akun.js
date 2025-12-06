@@ -52,5 +52,9 @@ const ambilduit = (id, jumlah) => {
   });
   return acc;
 };
+const transaksii = (id) => {
+  const acc = getAkun(id);
+  return acc.transaksi;
+};
 
-module.exports = { dataBaru, getAkun, ambilduit, depo };
+module.exports = { dataBaru, getAkun, ambilduit, depo, transaksii };
