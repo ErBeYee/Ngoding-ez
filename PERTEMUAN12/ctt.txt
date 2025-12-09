@@ -1,0 +1,11 @@
+=-LOCAL STPRAGE-=
+
+penyimpanan local yang tersedia di browser
+
+kriteria dri data nya adalah key value
+
+data berupa string JSON bukan javascript
+
+local storage = database
+key = tabel
+value = isi tabel
